@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kanit:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #232D3F;
+    color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container .card {
+    width: 23vw;
+    /* height: 30vw; */
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    /* background: linear-gradient(135deg, #ff6b6b, #ffd166); Sunrise Gradient */
+    box-shadow: 10px 10px 10px black;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.8rem;
+    /* width:fit-content; */
+    padding: 1rem;
+}
+
+.container .card .input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.container .card .input-field .input-city{
+    height: 4vh;
+    width: 80%;
+    border-radius: 25px;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.container .card .input-field .search{
+    height:4vh;
+    width: 10%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff; /* White button background color */
+    color: #3498db; 
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.2s ease; 
+    border: none;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.container .card .input-field .search:hover {
+    background-color: #f2f2f2;
+}
+
+.container .card .input-field .search:active {
+    transform: scale(0.8); /* Scale the button down slightly */
+}
+
+.container .card .display img{
+    position: relative;
+    width: 10vw;
+}
+
+.container .card .display h1{
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+
+.container .card .display h2{
+    font-size: 3rem;
+}
+
+.container .card .display h3{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container .card .details{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 10%;
+}
+
+.container .card .details .col img{
+    height: 4vw;
+}
+
+.container .card .details .col p{
+    font-size: 1.2rem;
+}
+
+.container .weather{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container .card {
+        width: 90%; /* Make the card take up 90% of the screen width */
+        height: auto; /* Allow the card height to adjust based on content */
+    }
+
+    .container .card .display img {
+        width: 20%; /* Adjust the image size */
+    }
+
+    .container .card .display h1 {
+        font-size: 2rem; /* Adjust the font size for the temperature */
+    }
+
+    .container .card .display h2 {
+        font-size: 1.5rem; /* Adjust the font size for the city */
+    }
+
+    .container .card .details {
+        flex-direction: column; /* Stack details vertically */
+        padding: 0; /* Remove horizontal padding */
+    }
+
+    .container .card .details .col {
+        margin-bottom: 1rem; /* Add spacing between detail columns */
+    }
+}

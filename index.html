@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather-Web</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="input-field">
+                <input class="input-city" id="input-city" type="text" placeholder="Type Your City">
+                <button class="search" id="search"><i class='bx bx-search-alt-2'></i></button>
+            </div>
+            <div class="weather">
+                <div class="display">
+                    <img class="image" src="" alt="">
+                    <h1 class="temperature"></h1>
+                    <h2 class="CityName"></h2>
+                    <h3 class="description"></h3>
+                </div>
+                <div class="details">
+                    <div class="col">
+                        <img src="Assets/wind.png" alt="">
+                        <div>
+                            <p>Wind Speed</p>
+                            <p class="WindSpeed"></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="Assets/humidity.png" alt="">
+                        <div>
+                            <p>Humidity</p>
+                            <p class="Humidity"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
